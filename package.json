@@ -3,6 +3,9 @@
   "version": "0.13.0",
   "description": "[Fork] Node.js bindings for libxslt compatible with libxmljs",
   "main": "index.js",
+  "engines": {
+    "node": ">=16.14.2"
+  },
   "scripts": {
     "test": "mocha -R spec",
     "docs": "jsdoc2md index.js --template readme.hbs > README.md"
@@ -29,8 +32,8 @@
   "license": "MIT",
   "dependencies": {
     "bindings": "^1.5.0",
-    "node1-libxmljsmt-myh": "1.0.8",
-    "nan": "~2.14.2"
+    "nan": "^2.16.0",
+    "node1-libxmljsmt-myh": "1.0.8"
   },
   "devDependencies": {
     "async": "~3.2.0",

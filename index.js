@@ -138,7 +138,7 @@ Stylesheet.prototype.apply = function(source, params, options, callback) {
 	// xml can be given as a string or a pre-parsed xml document
 	if (typeof source === 'string') {
 		try {
-			source = libxmljs.parseXml(source);
+			source = libxmljs.parseXml(source, { huge: true });
 		} catch (err) {
 			if (callback) return callback(err);
 			throw err;

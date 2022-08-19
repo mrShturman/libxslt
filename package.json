@@ -1,5 +1,5 @@
 {
-  "name": "libxslt",
+  "name": "node16-libxslt",
   "version": "0.11.0",
   "description": "[Fork] Node.js bindings for libxslt compatible with libxmljs",
   "main": "index.js",

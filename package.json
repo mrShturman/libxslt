@@ -7,6 +7,7 @@
     "node": ">=16.14.2"
   },
   "scripts": {
+    "preinstall": "git submodule update --init",
     "test": "mocha -R spec",
     "docs": "jsdoc2md index.js --template readme.hbs > README.md"
   },

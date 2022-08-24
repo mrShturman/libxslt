@@ -1,12 +1,14 @@
 {
   "name": "node16-libxslt",
-  "version": "0.14.0",
+  "version": "0.13.3",
   "description": "[Fork] Node.js bindings for libxslt compatible with libxmljs",
   "main": "index.js",
   "engines": {
     "node": ">=16.14.2"
   },
   "scripts": {
+    "preinstall": "git submodule update --init",
+    "postinstall": "node-gyp rebuild",
     "test": "mocha -R spec",
     "docs": "jsdoc2md index.js --template readme.hbs > README.md"
   },
